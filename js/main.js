@@ -2,14 +2,12 @@
 const iter = [	
   'a', 'b'
 ];    
-
 for (const i of iter) {      
   console.log(i);    
 } 
-/* 
-  "a"    
-  "b"
-*/
+// "a", "b"
+
+
 
 for (let c of "String"){      
   console.log(c);    
