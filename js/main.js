@@ -22,4 +22,3 @@ for (let c of "String"){
    * "a"    
    * "b"
    */
->>>>>>> 7ed5fac38c84e125b7c31bc97646aebd005be9ce
