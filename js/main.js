@@ -4,22 +4,38 @@ const iter = [
 ];    
 
 for (const i of iter) {      
-<<<<<<< HEAD
 	console.log(i);    
 } 
-/* 
-  "a"    
-  "b"
-*/
+
+//  "a", "b"
+
 
 for (let c of "String"){      
   console.log(c);    
 } 
 // "s" "t" "r" "i" "n" "g"
-=======
-  console.log(i);    
-} /* prints 
-   * "a"    
-   * "b"
-   */
->>>>>>> 7ed5fac38c84e125b7c31bc97646aebd005be9ce
+
+
+//Iterators
+//Take an array and return an iterator    
+function iter(array) {
+  var nextId = 0;
+  return {
+    next: function () {
+      if (nextId < array.length) {
+        return {
+          value: array[nextId++],
+          done: false
+        };
+      } else {
+        return {
+          done: true
+        }
+      }
+    }
+  }
+}
+var it = iter(['Hello', 'Iterators']);
+console.log(it.next().value); // 'Hello'
+console.log(it.next().value); // 'Iterators'
+console.log(it.next().done);  // true
