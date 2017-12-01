@@ -5,7 +5,13 @@ const iter = [
 
 for (const i of iter) {      
 	console.log(i);    
-} /* prints 
-	 * "a"    
-	 * "b"
-	*/
+} 
+/* 
+  "a"    
+  "b"
+*/
+
+for (let c of "String"){      
+  console.log(c);    
+} 
+// "s" "t" "r" "i" "n" "g"
