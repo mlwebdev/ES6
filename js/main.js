@@ -4,8 +4,7 @@ const iter = [
 ];    
 
 for (const i of iter) {      
-<<<<<<< HEAD
-	console.log(i);    
+  console.log(i);    
 } 
 /* 
   "a"    
@@ -16,9 +15,4 @@ for (let c of "String"){
   console.log(c);    
 } 
 // "s" "t" "r" "i" "n" "g"
-=======
-  console.log(i);    
-} /* prints 
-   * "a"    
-   * "b"
-   */
+ 
